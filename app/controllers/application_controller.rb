@@ -14,7 +14,7 @@ class ApplicationController < ActionController::Base
     redirect_to foursquare_url unless logged_in?
   end
 
-  
+
     def logged_in?
       !!session[:token]
     end
